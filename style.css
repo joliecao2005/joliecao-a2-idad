@@ -1,5 +1,54 @@
+h1 {
+  font-family: "Mozilla Headline", sans-serif;
+  font-size: 2rem;
+  font-weight: 330;
+  text-align: justify;
+  background-color: #829947;
+  color: #fbf9d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  /* padding: 0px 5px 0px 5px; */
+}
+
+h2 {
+  font-family: "Mozilla Headline", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 220;
+  display: flex;
+  justify-content: center;
+  /* background-color: #0540f5; */
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #263510;
+  background-color: #fbf9d1;
+  font-family: "Work Sans", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 29px;
+  padding-left: 7px;
+}
+
+h4 {
+  color: #ddf3bc;
+  /* background-color: #eff9be; */
+  font-family: "Work Sans", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: -5px;
+}
+
+a {
+  color: #89b58c;
+}
 #link {
-  color: rgb(0, 0, 0);
+  color: #fbf9d1;
   flex-direction: row;
   text-align: justify;
   display: flex;
@@ -9,14 +58,59 @@
   /* margin: 20px; */
 }
 
-#visual {
+main {
+  width: 620px;
+  flex-direction: column;
   text-align: justify;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  gap: 0.5rem;
+  color: #fbf9d1;
+}
+
+body {
+  font-family: "Work Sans", serif;
+  background-color: #263510;
+}
+
+#visual-plan {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  margin: auto;
+  gap: 10px;
 }
 
 img {
-  width: 40%;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+#footer-section {
+  width: 100%;
+  font-family: "Work Sans", serif;
+  color: #263510;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fbf9d1;
+  padding: 0px 15px 0px 15px;
+  margin-top: 90px;
+  margin-bottom: -200px;
+}
+
+.footer-section > * {
+  flex: 1;
 }
