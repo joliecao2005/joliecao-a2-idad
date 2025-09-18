@@ -21,8 +21,9 @@ h2 {
   justify-content: center;
   /* background-color: #0540f5; */
   color: rgb(255, 255, 255);
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: auto;
+
   /* margin: auto; */
 }
 
@@ -50,7 +51,14 @@ h4 {
 
 a {
   color: #89b58c;
+  font-style: italic;
+  transition: 0.3s;
 }
+
+a:hover {
+  font-weight: 650;
+}
+
 #link {
   color: #fbf9d1;
   flex-direction: row;
@@ -60,6 +68,8 @@ a {
   align-items: center;
   gap: 20px;
   margin: 0px;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 main {
