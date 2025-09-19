@@ -57,17 +57,6 @@
         creates an unexpected audiovisual experience that invites exploration
         and immersion.
       </p>
-      <p>
-        HTML is for the structure of the soundboard elements. CSS is for
-        elements and layout styling and visual feedback during interaction. I
-        wanted to create the ‘shrunk’ effect for the icons/boxes for visual
-        feedback to let the users know which sound is chosen/playing and they
-        can click on it again to return the initial size and stop the audio.
-        While hovering, the icons/boxes are also slightly enlarged to indicate
-        that they are clickable. JavaScript helps handle actions, utilising
-        Tone.js for audio control and Math.random() as one of the advanced
-        techniques to return a random soundtrack from the audio inputs.
-      </p>
       <h3>✩ Visual Plan</h3>
       <div id="visual-plan">
         <img src="visual-1.jpg" alt="Pic 1" />
@@ -93,6 +82,29 @@
         <p>Create customisable soundscapes with nature sounds</p>
         <a href="https://mynoise.net/"> myNoise </a>
       </div>
+      <p>
+        These UIs helped shape my understanding of the interactive audio-based
+        UIs. All three of them taught me how to emphasise the harmony in
+        blending multiple audio clips to create a serene ambience and a
+        rewarding audio experience.
+      </p>
+      <p>
+        Especially with Incredibox, I learnt how intriguing and amazing it can
+        be to interact with lots of audio inputs at the same time. The drag and
+        drop works really impressively, with unpredictable sounds to create
+        unique soundscapes. Similarly, myNoise allows users to create auditory
+        environments based on their choices and preferences for moods, music,
+        and sound effects. It inspired me to consolidate the nature-grounded
+        theme and let the users control their customisable natural soundscapes.
+        My initial idea was drawn upon Spirit City: Lo-Fi Sessions, to create
+        the UI to mix in sounds for study sessions in a game style (something
+        calm and relaxing), so my orientation is still the peaceful ambience,
+        but in a playful way. After iteration, I wanted to create something
+        simpler and minimalist compared to that with illustrations as the key
+        visuals, so the soundboard was my choice. The audio controller from
+        myNoise would be a significant feature I can consider implementing to
+        add depth to my immersive audio environment.
+      </p>
       <h3>✩ Technical Approach</h3>
       <p>
         Using the Tone.js library, the soundboard can manage and manipulate the
@@ -106,17 +118,23 @@
         of the sourced sound effects in Reaper. I created an effect by
         Tone.Reverb and then connected audio players to destination and reverb.
       </p>
-      <p>
-        HTML is for the structure of the soundboard elements. CSS is for
-        elements and layout styling, and visual feedback during interaction. I
-        wanted to create the ‘shrunk’ effect for the icons/boxes for visual
-        feedback to let the users know which sound is chosen/playing, and they
-        can click on it again to return to the initial size and stop the audio.
-        While hovering, the icons/boxes are also slightly enlarged to indicate
-        that they are clickable. JavaScript helps handle actions, utilising
-        Tone.js for audio control and Math.random() as one of the advanced
-        techniques to return a random soundtrack from the audio inputs.
-      </p>
+
+      <ul>
+        <li>HTML is for the structure of the soundboard elements.</li>
+        <li>
+          is for elements and layout styling, and visual feedback during
+          interaction. I wanted to create the ‘shrunk’ effect for the
+          icons/boxes for visual feedback to let the users know which sound is
+          chosen/playing, and they can click on it again to return to the
+          initial size and stop the audio. While hovering, the icons/boxes are
+          also slightly enlarged to indicate that they are clickable.
+        </li>
+        <li>
+          helps handle actions, utilising Tone.js for audio control and
+          Math.random() as one of the advanced techniques to return a random
+          soundtrack from the audio inputs.
+        </li>
+      </ul>
       <p>
         When users click on the background music zone, Math.random() selects
         between input tracks to play a random song. The random sound box also
@@ -125,7 +143,7 @@
         on the sound effects zone (each box with the attached ‘click’ event),
         the playback function is executed.
       </p>
-      <p>
+      <p class="italic">
         In addition, I’ve changed from utilising Date.now() to Math.random().
         The initial idea was to alternate daytime and nighttime tracks,
         encouraging multiple visits. However, during iteration, I realised
@@ -164,14 +182,14 @@
       <p class="title">Quick Summary:</p>
       <img class="feedback" src="feedback-2.jpg" alt="Feedback 2" />
       <p>
-        Regarding the understanding and feeling of the experience, there were
-        three key points I could delve deeper into:
+        As for the understanding and feeling of the experience, there were three
+        key points I could delve deeper into:
       </p>
       <p>
         #1 They acknowledged calmness as a characterisation of the website,
         regarding the aesthetics and audio.
       </p>
-      <p>
+      <p class="response">
         → As I’m creating a nature-themed soundboard, it was fulfilling to see
         the users feel the calmness in the aesthetics. However, they were the
         illustrations I sourced from the internet for testing purposes only. I
@@ -185,7 +203,7 @@
         #2 Their expectation was shifted in overall feelings, but not about the
         difference in understanding.
       </p>
-      <p>
+      <p class="response">
         → This is good. Because to me, it means the interaction could bring
         something to them through the audiovisual experience, yet it was easy
         and cohesive to interact with.
@@ -194,7 +212,7 @@
         #3 The viewpoints in mixing sounds: all worked together VS. one played
         at a time.
       </p>
-      <p>
+      <p class="response">
         → Some considered the fact that all the sound effects could play
         simultaneously with the music a good experience. Some considered it too
         chaotic. While one expected one sound would automatically stop when
@@ -240,8 +258,8 @@
         the users have a diverse selection to choose from in terms of immersing
         themselves in nature.
       </p>
-      <p>
-        This is a very significant aspect that is worth thoughtful
+      <p class="response">
+        → This is a very significant aspect that is worth thoughtful
         consideration. To have these 9 sound boxes, I’d spent a considerable
         amount of time selecting suitable sound effects and layering them
         together in Reaper to experiment before I decided to use them in the
@@ -254,14 +272,17 @@
         Significantly, whether they suggested I add more sounds or not, they all
         recommended that I add the volume control. It’s very helpful to let me
         pay attention to this aspect, allowing the users to adjust their
-        preferred sounds. Moreover, maybe I could consider adding distortion,
-        echo, or reverb to certain sounds depending on the association of those
-        in nature. For example, birds chirping in the distance. In this way, it
-        would create a deeper and more realistic audio experience and not make
-        everything solely jump in and go off. Going on with the consideration
-        for mixing multiple sounds at once or not, it’s a good idea to let the
-        users control the volume. In this way, all the sounds can still be
-        playing at once, yet controllable and not too chaotic.
+        preferred sounds.
+      </p>
+      <p class="response">
+        → Maybe I could consider adding distortion, echo, or reverb to certain
+        sounds depending on the association of those in nature. For example,
+        birds chirping in the distance. In this way, it would create a deeper
+        and more realistic audio experience and not make everything solely jump
+        in and go off. Going on with the consideration for mixing multiple
+        sounds at once or not, it’s a good idea to let the users control the
+        volume. In this way, all the sounds can still be playing at once, yet
+        controllable and not too chaotic.
       </p>
     </main>
     <footer id="footer-section">
